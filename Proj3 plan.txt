@@ -1,0 +1,9 @@
+First I will parse the userlog.log file and store the all the logs into a dictionary. The key of the dictionary is the USER EMAIL_ID and the value of the dicationary is another dictionary. The key of this inner dictionary is the DATE and the value is a list of tuples contain TIME, ACTIVITY, and SERVER.
+
+For the Suspicious activities part, first i will iterate the dicationary by the key email ID. And then, for each EMAIL ID, I will iterate the inner dicationary by the key DATE. Next, I will have a loop to go through the list of tuples and count the login actvity to determine if the number of logins is grater than five times. Then, use the TIME to determine if there is any login between 12am to 5am. Output the results to the report.
+
+For the Irresponsible behavior part, similar to the last part, iterate the dicationaies. Count the numbers of logins and logouts for each email ID on each date. If the numbers of logins is more than the numbers of logouts, output the results.
+
+For the System glitch, similar to the the Irresponsible behavior part, but the condition now change to if the numbers of logouts is more than the numbers of logins, output the results.
+
+For the domain counts part, first I will get the list of emails by getting the keys of the dictionary and have another dictionary for counting the number of users of each domain. Then, I will loop through the email list and split the email by "@" so that I can get the NAME and DOMAIN NAME from the email. Then check if the count dictionary contains the domain or not. If the count dictionary does not contain the domain, add the domain and set the count to 1. If the count dictionary contains the domain, increase the count value accordingly. Finally, output the count dictionary to the report.
