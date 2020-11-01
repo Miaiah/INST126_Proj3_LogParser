@@ -1,8 +1,8 @@
-First I will parse the userlog.log file and store the all the logs into a dictionary. The key of the dictionary is the USER EMAIL_ID and the value of the dicationary is another dictionary. The key of this inner dictionary is the DATE and the value is a list of tuples contain TIME, ACTIVITY, and SERVER.
+First I will parse the userlog.log file and store the all the logs into a dictionary. The key of the dictionary is the USER EMAIL_ID and the value of the dictionary is another dictionary. The key of this inner dictionary is the DATE and the value is a list of tuples contain TIME, ACTIVITY, and SERVER.
 
-For the Suspicious activities part, first i will iterate the dicationary by the key email ID. And then, for each EMAIL ID, I will iterate the inner dicationary by the key DATE. Next, I will have a loop to go through the list of tuples and count the login actvity to determine if the number of logins is grater than five times. Then, use the TIME to determine if there is any login between 12am to 5am. Output the results to the report.
+For the Suspicious activities part, first i will iterate the dictionary by the key email ID. And then, for each EMAIL ID, I will iterate the inner dictionary by the key DATE. Next, I will have a loop to go through the list of tuples and count the login activity to determine if the number of logins is grater than five times. Then, use the TIME to determine if there is any login between 12am to 5am. Output the results to the report.
 
-For the Irresponsible behavior part, similar to the last part, iterate the dicationaies. Count the numbers of logins and logouts for each email ID on each date. If the numbers of logins is more than the numbers of logouts, output the results.
+For the Irresponsible behavior part, similar to the last part, iterate the dictionary. Count the numbers of logins and logouts for each email ID on each date. If the numbers of logins is more than the numbers of logouts, output the results.
 
 For the System glitch, similar to the the Irresponsible behavior part, but the condition now change to if the numbers of logouts is more than the numbers of logins, output the results.
 
